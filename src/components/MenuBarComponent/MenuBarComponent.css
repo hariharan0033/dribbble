@@ -1,0 +1,53 @@
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 1rem;
+    height: 74px;
+}
+.menus{
+    width: 75%;
+}
+.menu-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.menu-option li{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 25px;
+}
+.menu-option li:first-child{
+    background-color: lightgray;
+
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+svg{
+    margin:0 5px;
+}
+.menu-dropdown , .filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid lightgrey 1px;
+    padding-inline: 1rem;
+}
+.menu-dropdown{
+    border-radius: 10px;
+}
+.filter{
+    border-radius: 25px;
+}
