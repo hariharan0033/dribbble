@@ -19,7 +19,7 @@ const NavBarComponent = () => {
             </div>
 
             <div className="nav logo">
-                <a href=""><img src={logo} alt="Dribbble Logo" className='logo' /></a>
+                <a href="#"><img src={logo} alt="Dribbble Logo" className='logo' /></a>
             </div>
 
             <div className="nav-right">

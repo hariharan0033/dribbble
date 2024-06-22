@@ -1,0 +1,33 @@
+.footer-upper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5rem;
+    padding: 0 3rem;
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+
+}
+.footer-upper-menus{
+    width: 70%;
+}
+.footer-upper-menus ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer-icons{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
