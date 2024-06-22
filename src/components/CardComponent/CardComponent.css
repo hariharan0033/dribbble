@@ -1,15 +1,107 @@
 .card-container{
     width: 20vw;
     min-width: 300px;
+    border-radius: 10px;
+
 }
 .img-container{
     width: 100%;
+    height: 80%;
+    position: relative;
+    border-radius: 10px;
 }
+
 .card-image{
     width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.img-hover-details{
+    position: absolute;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    border-radius: 10px;
+}
+.img-actions{
+    display: flex;
+    width: 35%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.actions{
+    font-size: 1.1rem;
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+.actions:hover{
+    color: rgb(136, 136, 136); 
+}
+.card-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+.author-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+   
 }
 .author-image{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+}
+h3{
+    font-weight: 200;
+}
+.pro{
+    background-color: rgb(200, 198, 198);
+    color:white;
+    place-content: center;
+    padding: 0 2px;
+    border-radius: 5px;
+    font-size:smaller;
+    font-weight: bold;
+}
+.pro:hover{
+    background-color: black;
+}
+.img-details{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+.likes{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;  
+    color: rgb(136, 136, 136);  
+}
+.like:hover{
+    color:#ea64d9;
+}
+.views{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(136, 136, 136);  
+
 }

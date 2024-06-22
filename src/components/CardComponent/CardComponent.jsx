@@ -16,25 +16,27 @@ const CardComponent = () => {
                 <div className="img-hover-details">
                     <h3>img-name</h3>
                     <div className="img-actions">
-                        <RiHeart3Line />
-                        <HiOutlineBookmark /><HiBookmark />
+                      <div className="actions"><HiOutlineBookmark /></div>
+                      {/* <div className="actions"><HiBookmark /></div> */}
+                      <div className="actions"><RiHeart3Line /></div>
                     </div>
                 </div>
             </div>
+
             <div className="card-details">
                 <div className="author-details">
                     <img src={profile} alt="" className='author-image'/>
-                    <h3>Author</h3>
-                    <span>pro</span>
+                    <h3 className='author-name'>Author</h3>
+                    <span className='pro'>PRO</span>
                 </div>
                 <div className="img-details">
                     <div className="likes">
-                        <GoHeartFill style={{color:'#ea64d9'}}/>
-                        <span>like-count</span>
+                        <GoHeartFill className='like'/>
+                        <span>33</span>
                     </div>
                     <div className="views">
                         <TbEyeFilled />
-                        <span>view-count</span>
+                        <span>565</span>
                     </div>
                 </div>
             </div>
