@@ -1,0 +1,20 @@
+.footer-lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+    padding: 2rem 3rem;
+    flex-wrap: wrap;
+}
+.footer-lower ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    justify-content: center;
+    color: rgb(142, 142, 142);
+}
+.footer-lower ul li a{
+    color: rgb(142, 142, 142);
+}
