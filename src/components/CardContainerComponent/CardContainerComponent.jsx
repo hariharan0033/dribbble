@@ -2,15 +2,13 @@ import React from 'react'
 import CardComponent from '../CardComponent/CardComponent'
 import './CardContainerComponent.css'
 
-const CardContainerComponent = () => {
+const CardContainerComponent = ({data}) => {
   return (
     <div className='cards-container'>
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
-      <CardComponent />
+      {data.map((card)=>{
+          return <CardComponent key={card.name} card={card}/>
+      })}
+      
     </div>
   )
 }

@@ -17,6 +17,7 @@
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
+    font-weight:bold;
 }
 .menu li{
     display: flex;

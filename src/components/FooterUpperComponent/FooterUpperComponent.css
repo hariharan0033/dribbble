@@ -6,7 +6,7 @@
     margin: 2rem 5rem;
     padding: 0 3rem;
     flex-wrap: wrap;
-
+    font-weight:bold;
 }
 .footer-logo{
     display: flex;

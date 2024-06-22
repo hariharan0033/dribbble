@@ -7,14 +7,14 @@ import { RiHeart3Line } from "react-icons/ri";
 import { HiOutlineBookmark } from "react-icons/hi";
 import { HiBookmark } from "react-icons/hi2";
 
-const CardComponent = () => {
+const CardComponent = ({card}) => {
   return (
     <React.Fragment>
         <div className="card-container">
             <div className="img-container">
-                <img src={profile} alt="" className='card-image'/>
+                <img src={card.imagelink} alt="" className='card-image'/>
                 <div className="img-hover-details">
-                    <h3>img-name</h3>
+                    <h3>{card.name}</h3>
                     <div className="img-actions">
                       <div className="actions"><HiOutlineBookmark /></div>
                       {/* <div className="actions"><HiBookmark /></div> */}
@@ -26,7 +26,7 @@ const CardComponent = () => {
             <div className="card-details">
                 <div className="author-details">
                     <img src={profile} alt="" className='author-image'/>
-                    <h3 className='author-name'>Author</h3>
+                    <h3 className='author-name'>{card.authorname}</h3>
                     <span className='pro'>PRO</span>
                 </div>
                 <div className="img-details">
