@@ -32,13 +32,17 @@ const CardComponent = ({card}) => {
     <React.Fragment>
         <div className="card-container">
             <div className="img-container"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <img src={card.imagelink} alt="" className='card-image'/>
+                <a href=""><img src={card.imagelink} alt="" className='card-image'/></a>
                 <div className={`img-hover-details ${hoverClass}`}>
-                    <h3>{card.name}</h3>
+                    <h3><a href="">{card.name}</a></h3>
                     <div className="img-actions">
-                      <div className="actions" onClick={handleSaveClick}>{saved ? <HiBookmark /> : <HiOutlineBookmark />}</div>
+                      <div className="actions" 
+                                onClick={handleSaveClick}>{saved ? <HiBookmark />
+                                                                  : <HiOutlineBookmark />}</div>
 
-                      <div className="actions" onClick={handleLikeClick}>{card.isliked ? <GoHeartFill className='liked' /> : <RiHeart3Line />}</div>
+                      <div className="actions" 
+                                  onClick={handleLikeClick}>{card.isliked ? <GoHeartFill className='liked' /> 
+                                                                          : <RiHeart3Line />}</div>
                     </div>
                 </div>
             </div>
@@ -46,7 +50,7 @@ const CardComponent = ({card}) => {
             <div className="card-details">
                 <div className="author-details">
                     <img src={card.profilephotolink} alt={card.authorname} className='author-image'/>
-                    <h4 className='author-name'>{card.authorname}</h4>
+                    <h4 className='author-name'><a href="">{card.authorname}</a></h4>
                     <span className='pro'>PRO</span>
                 </div>
                 <div className="img-details">

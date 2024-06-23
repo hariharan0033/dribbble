@@ -24,11 +24,49 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .menu li a{
     text-decoration: none;
 }
+.drop-down{
+    display: none;
+    position: absolute;
+    width: max-content;
+    top:100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0 ;
+    z-index: 1;
+    border-radius: 10px;
 
+    padding: 20px 0 ;
+}
+.drop-down li{
+    padding:  10px 15px;
+    margin: 0 15px;
+
+}
+.drop-down li p{
+    font-size: smaller;
+    font-weight: 100;
+    
+}
+.drop-down li:hover{
+    background-color: #f7f7f7;
+}
+.menu > li:hover .drop-down {
+    display: block;
+
+  }
+/* .drop-down:hover{
+    display: block;
+} */
+#workshop{
+    border-top: 1px solid black;
+}
 .menu li a:visited{
     color: black;
 }

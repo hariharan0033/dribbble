@@ -29,6 +29,9 @@
     border-radius: 10px;
     opacity: 0;
 }
+.img-hover-details h3 a{
+    color:white
+}
 .hover{
     opacity: 1;
 }
@@ -47,6 +50,7 @@
     border-radius: 50%;
     display: grid;
     place-content: center;
+    cursor: pointer;
 }
 .actions:hover{
     color: rgb(136, 136, 136); 
@@ -98,6 +102,9 @@ h3 , h4{
     justify-content: space-between;
     align-items: center;  
     color: rgb(136, 136, 136);  
+}
+.like {
+    cursor: pointer;
 }
 .like:hover , .liked{
     color:#ea64d9;
