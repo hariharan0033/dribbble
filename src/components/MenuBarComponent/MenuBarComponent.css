@@ -7,6 +7,39 @@
 
     height: 74px;
 }
+
+.menu-dropdown , .filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid lightgrey 1px;
+    padding-inline: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+.drop-down-popular{
+    position: absolute;
+    width: max-content;
+    top:130%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0 ;
+    z-index: 1;
+    border-radius: 10px;
+
+    padding: 10px 0 ;
+}
+.drop-down-popular li{
+    padding:  10px 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.drop-down-popular li:hover{
+    background-color: #f7f7f7;
+}
+
 .menus{
     width: 75%;
 }
@@ -40,13 +73,7 @@ a:visited{
 svg{
     margin:0 5px;
 }
-.menu-dropdown , .filter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: solid lightgrey 1px;
-    padding-inline: 1rem;
-}
+
 .menu-dropdown{
     border-radius: 10px;
 }

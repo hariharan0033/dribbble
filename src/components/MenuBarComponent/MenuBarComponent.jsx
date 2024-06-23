@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RiArrowDownSLine } from "react-icons/ri";
 import { BiMenuAltLeft } from "react-icons/bi";
 import './MenuBarComponent.css'
 
-const MenuBarComponent = () => {
+const MenuBarComponent = ({sortOption , setSortOption}) => {
+    const [dropDown , setDropDown] = useState(false);
+
+    const toggleDropDown = () => {
+        setDropDown(!dropDown)
+    }
+
+    const handleClickOption = (option) =>{
+        setSortOption(option);
+        setDropDown(false);
+    }
+
   return (
         <React.Fragment>
             <div className="menu-bar">
-                <div className="menu-dropdown">
-                    <span>Following</span>
-                    <RiArrowDownSLine/>
+                <div className="menu-dropdown" onClick={toggleDropDown} >
+                    <span >{sortOption}<RiArrowDownSLine/> </span>
+                    {dropDown && 
+                        <ul className='drop-down-popular'>
+                         <li onClick={() => handleClickOption("Following")}>Following</li>
+                        <li onClick={() => handleClickOption("Popular")}>Popular</li>
+                        <li onClick={() => handleClickOption("Noteworthy")}>Noteworthy</li>
+                    </ul>}
+                   
+                            
                 </div>
 
                 <div className='menus'>

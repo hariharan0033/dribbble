@@ -37,7 +37,7 @@ const CardComponent = ({card}) => {
                     <h3><a href="">{card.name}</a></h3>
                     <div className="img-actions">
                       <div className="actions" 
-                                onClick={handleSaveClick}>{saved ? <HiBookmark />
+                                onClick={handleSaveClick}>{saved ? <HiBookmark className='saved' />
                                                                   : <HiOutlineBookmark />}</div>
 
                       <div className="actions" 

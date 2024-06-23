@@ -106,7 +106,7 @@ h3 , h4{
 .like {
     cursor: pointer;
 }
-.like:hover , .liked{
+.like:hover , .liked , .saved{
     color:#ea64d9;
 }
 .views{

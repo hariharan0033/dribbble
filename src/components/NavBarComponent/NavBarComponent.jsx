@@ -18,7 +18,7 @@ const NavBarComponent = () => {
             <div className="nav-main">
                 <ul className='menu'>
                     <li onMouseEnter={toggleFindDesigner} onMouseLeave={toggleFindDesigner}>
-                        <a href="">Find designers
+                        Find designers
                         {isFindDesignersOpen && (
                             <ul className='drop-down'>
                                 <li><a href="">Designer search
@@ -29,7 +29,7 @@ const NavBarComponent = () => {
                                     </a></li>
                             </ul>
                         )}
-                        </a><RiArrowDownSLine /></li>
+                        <RiArrowDownSLine /></li>
                     <li><a href="">Inspiration</a></li>
                     <li onMouseEnter={toggleCourses} onMouseLeave={toggleCourses}>
                         <a href="">Courses
