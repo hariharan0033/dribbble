@@ -5,6 +5,7 @@ import { TbEyeFilled } from "react-icons/tb";
 import { RiHeart3Line } from "react-icons/ri";
 import { HiOutlineBookmark } from "react-icons/hi";
 import { HiBookmark } from "react-icons/hi2";
+import { toast } from 'react-hot-toast';
 
 const CardComponent = ({card}) => {
     const [hoverClass , setHoverClass] = useState('');
@@ -20,11 +21,24 @@ const CardComponent = ({card}) => {
       };
       const handleSaveClick = () => {
         setSaved(!saved);
+        toast(saved ? 'Removed from bookmarks!' : 'Added to bookmarks!', {
+          icon: saved ? '❌' : '🔖',
+        });
         
       };
       const handleLikeClick = () => {
-        card.isliked ? setLike(like - 1) : setLike(like + 1) ;
-        card.isliked = !card.isliked ;
+        // card.isliked ? setLike(like - 1) : setLike(like + 1) ;
+        // card.isliked = !card.isliked ;
+        if (card.isliked) {
+          setLike(like - 1);
+          toast('Post unliked!', { icon: '👎' });
+        } else {
+          setLike(like + 1);
+          // toast.success('Post liked!');
+          toast('Post liked!', { icon: '🩷' });
+
+        }
+        card.isliked = !card.isliked;
       };
 
   return (

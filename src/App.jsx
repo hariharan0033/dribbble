@@ -5,6 +5,7 @@ import MenuBarComponent from './components/MenuBarComponent/MenuBarComponent';
 import CardContainerComponent from './components/CardContainerComponent/CardContainerComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
 import data from './data/data.json';
+import { Toaster } from 'react-hot-toast';
 
 const App = () => {
   const [filteredData , setFilteredData ]= useState(data);
@@ -43,6 +44,7 @@ const App = () => {
                         category={category} setCategory={setCategory}/>
       <CardContainerComponent data={filteredData}/>
       <FooterComponent/>
+      <Toaster />
     </React.Fragment>
     )
 }
