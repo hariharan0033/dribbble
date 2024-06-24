@@ -4,13 +4,24 @@ import profile from '../../assets/images/profile.jpg';
 import './NavBarComponent.css';
 import { CiSearch } from "react-icons/ci";
 import { RiArrowDownSLine } from "react-icons/ri";
-const NavBarComponent = () => {
+const NavBarComponent = ({searchTerm , setSearchTerm}) => {
 
     const [isFindDesignersOpen , setFindDesignersOpen] = useState(false);
     const [isCoursesOpen , setCoursesOpen] = useState(false);
 
     const toggleFindDesigner = () => setFindDesignersOpen(!isFindDesignersOpen);
     const toggleCourses = () => setCoursesOpen(!isCoursesOpen);
+
+    const [inputValue , setInputValue] = useState('')
+
+    const handleInputChange = (e) =>{
+        setInputValue(e.target.value)
+    }
+    const handleKeyDown = (e) => {
+        if(e.key === 'Enter'){
+            setSearchTerm(inputValue);
+        }
+    }
 
   return (
     <React.Fragment>
@@ -59,7 +70,11 @@ const NavBarComponent = () => {
             <div className="nav-right">
                 <div className="search">
                     <CiSearch  className='search-icon'/>
-                    <input type="search" placeholder="Search..." />
+                    <input type="search" 
+                            placeholder="Search..." 
+                            value={inputValue}
+                            onChange={handleInputChange}
+                            onKeyDown={handleKeyDown}/>
                 </div>
                 <img className='profile-img' src={profile} alt="Profile" />
             </div>

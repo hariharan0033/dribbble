@@ -10,10 +10,17 @@ const App = () => {
   const [filteredData , setFilteredData ]= useState(data);
   const [sortOption , setSortOption] = useState("Following");
   const [category , setCategory] = useState("Discover");
+  const [searchTerm , setSearchTerm] = useState('');
 
   useEffect(()=>{
     let filtered = [...data];
 
+    if(searchTerm){
+      filtered = filtered.filter((card) =>{
+        return (card.name && card.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (card.authorname && card.authorname.toLowerCase().includes(searchTerm.toLowerCase()))
+      })
+    }
 
     if(sortOption==="Popular"){
       filtered = filtered.sort((a,b) => b.viewcount - a.viewcount)
@@ -27,12 +34,13 @@ const App = () => {
     }
 
     setFilteredData(filtered);
-  },[sortOption , category])
+  },[sortOption , category ,searchTerm])
 
   return (
     <React.Fragment>
-      <NavBarComponent/>
-      <MenuBarComponent sortOption={sortOption} setSortOption={setSortOption} category={category} setCategory={setCategory}/>
+      <NavBarComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <MenuBarComponent sortOption={sortOption} setSortOption={setSortOption}
+                        category={category} setCategory={setCategory}/>
       <CardContainerComponent data={filteredData}/>
       <FooterComponent/>
     </React.Fragment>
