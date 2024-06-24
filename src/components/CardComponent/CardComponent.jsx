@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import profile from '../../assets/images/profile.jpg'
 import './CardComponent.css'
 import { GoHeartFill } from "react-icons/go";
 import { TbEyeFilled } from "react-icons/tb";
