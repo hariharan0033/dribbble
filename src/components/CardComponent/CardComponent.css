@@ -117,3 +117,18 @@ h3 , h4{
     color: rgb(136, 136, 136);  
 
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet */
+    .card-container {
+        width: 30vw;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .card-container {
+        width: 90vw;
+    }
+}

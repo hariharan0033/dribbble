@@ -19,3 +19,28 @@
 .footer-lower ul li a{
     color: rgb(142, 142, 142);
 }
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet */
+    .footer-lower {
+        margin: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+        padding: 0;
+        margin: 3rem auto;
+    }
+    /* .footer-lower ul {
+        flex-direction: column;
+    } */
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .footer-lower {
+        margin: 1rem;
+        padding: 0.5rem;
+        padding: 0;
+        margin: 3rem auto;
+    }
+    /* .footer-lower ul {
+        flex-direction: column;
+    } */
+}

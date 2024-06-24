@@ -82,3 +82,41 @@ svg{
 .filter{
     border-radius: 25px;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet */
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap:20px ;
+    }
+    .menus, .menu-option {
+        width: 100%;
+        justify-content: center;
+    }
+    .menu-option li {
+        width: 100%;
+        justify-content: center;
+    }
+    .menus{
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .menu-bar {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        gap: 20px;
+    }
+    .menu-option {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .menus{
+        order: 1;
+    }
+}
