@@ -12,17 +12,45 @@ const App = () => {
   const [sortOption , setSortOption] = useState("Following");
   const [category , setCategory] = useState("Discover");
   const [searchTerm , setSearchTerm] = useState('');
+  const [recommendations , setRecommendations] = useState([]);
+  const [recommendationTerm , setRecommendationTerm] = useState('');
 
   useEffect(()=>{
     let filtered = [...data];
 
     if(searchTerm){
       filtered = filtered.filter((card) =>{
+        
         return (card.name && card.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
-        (card.authorname && card.authorname.toLowerCase().includes(searchTerm.toLowerCase()))
+        (card.authorname && card.authorname.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (card.category && card.category.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (card.tag && card.tag.toLowerCase().includes(searchTerm.toLowerCase()))
       })
     }
 
+    
+    if (recommendationTerm) {
+      const matchedTerms = new Set();
+      data.forEach((card) => {
+        if (card.name && card.name.toLowerCase().includes(recommendationTerm.toLowerCase()) && card.name.length > 2) {
+          matchedTerms.add(card.name);
+        }
+        if (card.authorname && card.authorname.toLowerCase().includes(recommendationTerm.toLowerCase()) && card.authorname.length > 2) {
+          matchedTerms.add(card.authorname);
+        }
+        if (card.category && card.category.toLowerCase().includes(recommendationTerm.toLowerCase()) && card.category.length > 2) {
+          matchedTerms.add(card.category);
+        }
+        if (card.tag && card.tag.toLowerCase().includes(recommendationTerm.toLowerCase()) && card.tag.length > 2) {
+          matchedTerms.add(card.tag);
+        }
+      });
+      setRecommendations([...matchedTerms]);
+    } else {
+      setRecommendations([]);
+    }
+
+    // console.log(recommendations)
     if(sortOption==="Popular"){
       filtered = filtered.sort((a,b) => b.viewcount - a.viewcount)
     }
@@ -35,11 +63,14 @@ const App = () => {
     }
 
     setFilteredData(filtered);
-  },[sortOption , category ,searchTerm])
+  },[sortOption , category ,searchTerm , recommendationTerm])
 
   return (
     <React.Fragment>
-      <NavBarComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <NavBarComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}
+                        recommendations={recommendations} setRecommendations ={setRecommendations}
+                        recommendationTerm ={recommendationTerm} setRecommendationTerm={setRecommendationTerm}
+                        />
       <MenuBarComponent sortOption={sortOption} setSortOption={setSortOption}
                         category={category} setCategory={setCategory}/>
       <CardContainerComponent data={filteredData}/>

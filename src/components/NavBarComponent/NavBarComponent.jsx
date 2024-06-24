@@ -4,7 +4,9 @@ import profile from '../../assets/images/profile.jpg';
 import './NavBarComponent.css';
 import { CiSearch } from "react-icons/ci";
 import { RiArrowDownSLine } from "react-icons/ri";
-const NavBarComponent = ({searchTerm , setSearchTerm}) => {
+const NavBarComponent = ({searchTerm , setSearchTerm ,
+                        recommendations , setRecommendations ,
+                        recommendationTerm , setRecommendationTerm}) => {
 
     const [isFindDesignersOpen , setFindDesignersOpen] = useState(false);
     const [isCoursesOpen , setCoursesOpen] = useState(false);
@@ -16,11 +18,18 @@ const NavBarComponent = ({searchTerm , setSearchTerm}) => {
 
     const handleInputChange = (e) =>{
         setInputValue(e.target.value)
+        setRecommendationTerm(e.target.value)
     }
     const handleKeyDown = (e) => {
         if(e.key === 'Enter'){
             setSearchTerm(inputValue);
+            setRecommendationTerm('')
         }
+    }
+    const handleRecommendationClick = (recommendation) => {
+        setInputValue(recommendation);
+        setSearchTerm(recommendation);
+        setRecommendationTerm('');
     }
 
   return (
@@ -67,7 +76,7 @@ const NavBarComponent = ({searchTerm , setSearchTerm}) => {
                 <a href="#"><img src={logo} alt="Dribbble Logo" className='logo' /></a>
             </div>
 
-            <div className="nav-right">
+            {/* <div className="nav-right">
                 <div className="search">
                     <CiSearch  className='search-icon'/>
                     <input type="search" 
@@ -75,7 +84,27 @@ const NavBarComponent = ({searchTerm , setSearchTerm}) => {
                             value={inputValue}
                             onChange={handleInputChange}
                             onKeyDown={handleKeyDown}/>
+                </div> */}
+                    <div className="nav-right">
+                <div className="search">
+                    <CiSearch  className='search-icon'/>
+                    <input type="search" 
+                            placeholder="Search..." 
+                            value={inputValue}
+                            onChange={handleInputChange}
+                            onKeyDown={handleKeyDown}/>
+                            <ul className='recommendations'>
+                            {recommendations && recommendations.map((recommendation) => {
+                                return ( <li key={recommendation} onClick={() => handleRecommendationClick(recommendation)}> {recommendation}</li> )
+                            })}
+                        </ul>
+
                 </div>
+                {/* <ul>
+                        {recommendations && recommendations.map((recommendation) => {
+                            return ( <li key={recommendation}>{recommendation}</li> )
+                        })}
+                    </ul> */}
                 <img className='profile-img' src={profile} alt="Profile" />
             </div>
             
