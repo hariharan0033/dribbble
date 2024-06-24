@@ -43,7 +43,7 @@ const NavBarComponent = ({searchTerm , setSearchTerm}) => {
                         <RiArrowDownSLine /></li>
                     <li><a href="">Inspiration</a></li>
                     <li onMouseEnter={toggleCourses} onMouseLeave={toggleCourses}>
-                        <a href="">Courses
+                        Courses
                     {isCoursesOpen && (
                             <ul className='drop-down'>
                                 <li><a href="">UX Diploma
@@ -57,7 +57,7 @@ const NavBarComponent = ({searchTerm , setSearchTerm}) => {
                                     </a></li>
                             </ul>
                         )}
-                        </a><RiArrowDownSLine /></li>
+                        <RiArrowDownSLine /></li>
                     <li><a href="">Jobs</a></li>
                     <li><a href="">GoPro</a></li>
                 </ul>
