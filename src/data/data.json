@@ -6,7 +6,7 @@
       "profilephotolink": "https://plus.unsplash.com/premium_photo-1676009619407-18a5121f9687?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D",
       "likecount": 1207,
       "viewcount": 3466,
-      "category":"Product design",
+      "category":"Product Design",
       "tag": "design"
    ,
   "isliked":false },
@@ -22,17 +22,6 @@
    ,
   "isliked":false },
     {
-      "name": "UI design",
-      "authorname": "Charlie Brown",
-      "imagelink": "https://miro.medium.com/v2/resize:fit:916/1*z2BaY_MTgmcjgLfNyGQJ4g.png",
-      "profilephotolink": "https://images.unsplash.com/photo-1647794821824-2443e34a84b1?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "likecount": 191,
-      "viewcount": 4856,
-      "category":"Web design",
-      "tag": "development"
-   ,
-  "isliked":false },
-    {
       "name": "Branding identity",
       "authorname": "Diana Prince",
       "imagelink": "https://images.unsplash.com/photo-1548094990-c16ca90f1f0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -43,6 +32,17 @@
       "tag": "branding"
    ,
   "isliked":false },
+  {
+    "name": "Austin FC Matchday Posters",
+    "authorname": "Erikas",
+    "imagelink": "https://cdn.dribbble.com/userupload/14811955/file/original-de5bec604785a91428f12ff2907f73fd.png?resize=450x338&vertical=center",
+    "profilephotolink": "https://cdn.dribbble.com/users/620539/avatars/small/7e10348c1586341c57e15297f249a02a.jpg?1649354395",
+    "likecount": 2712,
+    "viewcount": 86100,
+    "category":"Print",
+    "tag": "print",
+    "isliked":false
+  },
     {
       "name": "Photography Workshop",
       "authorname": "Andreya",
@@ -130,5 +130,49 @@
       "category":"Web Design",
       "tag": "web development"
    ,
-  "isliked":false }
+  "isliked":false },
+  {
+    "name": "Full Service Digital Agency",
+    "authorname": "Vivid Motion",
+    "imagelink": "https://cdn.dribbble.com/userupload/14227669/file/still-bf044a7f3a12527541347758f1e1efff.png?resize=400x300&vertical=center",
+    "profilephotolink": "https://cdn.dribbble.com/users/3946401/avatars/normal/c6fd9a79740736d312410e73248945c1.png?1688380823",
+    "likecount": 200,
+    "viewcount": 530,
+     "category":"Typography",
+    "tag": "typography"
+ ,
+"isliked":false },
+{
+  "name": "Flower",
+  "authorname": "Dima Moiseenko",
+  "imagelink": "https://cdn.dribbble.com/userupload/14011987/file/original-6ca08a8eaaf5c2b570eda00221cec248.jpg?crop=0x351-3000x2601&resize=400x300&vertical=center",
+  "profilephotolink": "https://cdn.dribbble.com/users/1068771/avatars/small/73f10aeecee8da86c40bd3cac892dc62.jpg?1708454054",
+  "likecount": 34,
+  "viewcount": 92,
+  "category":"Animation",
+  "tag": "animation"
+,
+"isliked":false },
+{
+  "name": "Delta Ducks 05",
+  "authorname": "atomicvibe lab",
+  "imagelink": "https://cdn.dribbble.com/userupload/13787503/file/original-cfd45ef6f5dbf28008805ccb86bb7de9.png?resize=400x300&vertical=center",
+  "profilephotolink": "https://cdn.dribbble.com/users/77680/avatars/small/601b4c2fefc94b0605241ec40e8c2efc.png?1686398237",
+  "likecount": 230,
+  "viewcount": 680,
+  "category":"Typography",
+  "tag": "typography"
+,
+"isliked":false },
+{
+  "name": "Quasar-3D design",
+  "authorname": "Vivid Motion®",
+  "imagelink": "https://cdn.dribbble.com/userupload/14808535/file/still-36e86abf3a9eda6ed9753245e327cde1.png?resize=400x300&vertical=center",
+  "profilephotolink": "https://cdn.dribbble.com/users/3946401/avatars/normal/c6fd9a79740736d312410e73248945c1.png?1688380823",
+  "likecount": 310,
+  "viewcount": 8800,
+  "category":"Animation",
+  "tag": "animation",
+  "isliked":false
+}
 ]

@@ -3,8 +3,9 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { BiMenuAltLeft } from "react-icons/bi";
 import './MenuBarComponent.css'
 
-const MenuBarComponent = ({sortOption , setSortOption}) => {
+const MenuBarComponent = ({sortOption , setSortOption ,category , setCategory }) => {
     const [dropDown , setDropDown] = useState(false);
+    
 
     const toggleDropDown = () => {
         setDropDown(!dropDown)
@@ -32,15 +33,15 @@ const MenuBarComponent = ({sortOption , setSortOption}) => {
 
                 <div className='menus'>
                     <ul className="menu-option">
-                        <li><a href="#">Discover</a></li>
-                        <li><a href="#">Animation</a></li>
-                        <li><a href="#">Branding</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Print</a></li>
-                        <li><a href="#">Product Design</a></li>
-                        <li><a href="#">Typography</a></li>
-                        <li><a href="#">Web Design</a></li>
+                        <li className={category ==="Discover" ? 'active' : ''} onClick={()=>setCategory("Discover")} >Discover</li>
+                        <li className={category ==="Animation" ? 'active' : ''} onClick={()=>setCategory("Animation")} >Animation</li>
+                        <li className={category ==="Branding" ? 'active' : ''} onClick={()=>setCategory("Branding")} >Branding</li>
+                        <li className={category ==="Illustration" ? 'active' : ''} onClick={()=>setCategory("Illustration")} >Illustration</li>
+                        <li className={category ==="Mobile" ? 'active' : ''} onClick={()=>setCategory("Mobile")} >Mobile</li>
+                        <li className={category ==="Print" ? 'active' : ''} onClick={()=>setCategory("Print")} >Print</li>
+                        <li className={category ==="Product Design" ? 'active' : ''} onClick={()=>setCategory("Product Design")} >Product Design</li>
+                        <li className={category ==="Typography" ? 'active' : ''} onClick={()=>setCategory("Typography")} >Typography</li>
+                        <li className={category ==="Web Design" ? 'active' : ''} onClick={()=>setCategory("Web Design")} >Web Design</li>
                     </ul>
                 </div>
 

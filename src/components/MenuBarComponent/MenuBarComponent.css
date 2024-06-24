@@ -59,8 +59,10 @@
     align-items: center;
     padding: 1rem;
     border-radius: 25px;
+    cursor: pointer;
 }
-.menu-option li:first-child{
+/* .menu-option li:first-child */
+.active{
     background-color: #e8ebed;
 
 }

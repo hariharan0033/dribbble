@@ -7,11 +7,13 @@ import FooterComponent from './components/FooterComponent/FooterComponent';
 import data from './data/data.json';
 
 const App = () => {
-  const[filteredData , setFilteredData ]= useState(data);
+  const [filteredData , setFilteredData ]= useState(data);
   const [sortOption , setSortOption] = useState("Following");
+  const [category , setCategory] = useState("Discover");
 
   useEffect(()=>{
     let filtered = [...data];
+
 
     if(sortOption==="Popular"){
       filtered = filtered.sort((a,b) => b.viewcount - a.viewcount)
@@ -20,13 +22,17 @@ const App = () => {
       filtered = filtered.sort((a,b) => b.likecount - a.likecount)
     }
 
+    if(category!="Discover"){
+      filtered = filtered.filter((card)=>{return  card && card.category === category})
+    }
+
     setFilteredData(filtered);
-  },[sortOption])
+  },[sortOption , category])
 
   return (
     <React.Fragment>
       <NavBarComponent/>
-      <MenuBarComponent sortOption={sortOption} setSortOption={setSortOption}/>
+      <MenuBarComponent sortOption={sortOption} setSortOption={setSortOption} category={category} setCategory={setCategory}/>
       <CardContainerComponent data={filteredData}/>
       <FooterComponent/>
     </React.Fragment>
