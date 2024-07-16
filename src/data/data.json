@@ -55,17 +55,6 @@
    ,
   "isliked":false },
     {
-      "name": "Art",
-      "authorname": "Vijay",
-      "imagelink": "https://www.jainuniversity.ac.in/application/views/microsites/sdmca/assets/img/graphics.jpg",
-      "profilephotolink": "https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "likecount": 902,
-      "viewcount": 4631,
-      "category":"Print",
-      "tag": "design"
-   ,
-  "isliked":false },
-    {
       "name": "Clothing App-design",
       "authorname": "George Clooney",
       "imagelink": "https://img.freepik.com/free-vector/fashion-shopping-app-interface_23-2148653665.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1717804800&semt=ais_user",
