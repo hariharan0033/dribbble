@@ -2,7 +2,7 @@
     {
       "name": "Home Interior design",
       "authorname": "Oripio",
-      "imagelink": "https://images.pexels.com/photos/7027787/pexels-photo-7027787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imagelink" : "/images/shot/img1.jpeg",
       "profilephotolink": "https://plus.unsplash.com/premium_photo-1676009619407-18a5121f9687?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D",
       "likecount": 1207,
       "viewcount": 3466,
@@ -13,7 +13,7 @@
     {
       "name": "Vasil Enev",
       "authorname": "Chess Game",
-      "imagelink": "https://cdn.dribbble.com/userupload/15024894/file/original-4430bcb0ef819c45b8a2b8e406764ce1.jpg?crop=0x809-2580x2744&resize=400x300&vertical=center",
+      "imagelink" : "/images/shot/img2.jpg",
       "profilephotolink": "https://images.unsplash.com/photo-1554774853-6a56f62c6451?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "likecount": 894,
       "viewcount": 2102,
@@ -24,7 +24,7 @@
     {
       "name": "Branding identity",
       "authorname": "Diana Prince",
-      "imagelink": "https://images.unsplash.com/photo-1548094990-c16ca90f1f0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imagelink" : "/images/shot/img3.avif",  
       "profilephotolink": "https://images.unsplash.com/photo-1606659639419-8e5374a18522?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "likecount": 23,
       "viewcount": 67,
@@ -35,7 +35,7 @@
   {
     "name": "Austin FC Matchday Posters",
     "authorname": "Erikas",
-    "imagelink": "https://cdn.dribbble.com/userupload/14811955/file/original-de5bec604785a91428f12ff2907f73fd.png?resize=450x338&vertical=center",
+    "imagelink" : "/images/shot/img4.png", 
     "profilephotolink": "https://cdn.dribbble.com/users/620539/avatars/small/7e10348c1586341c57e15297f249a02a.jpg?1649354395",
     "likecount": 2712,
     "viewcount": 86100,
@@ -46,7 +46,7 @@
     {
       "name": "Photography Workshop",
       "authorname": "Andreya",
-      "imagelink": "https://img.freepik.com/free-vector/flat-design-photography-studio-landing-page-template_23-2149481791.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1711670400&semt=ais",
+      "imagelink" : "/images/shot/img5.avif", 
       "profilephotolink": "https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "likecount": 110,
       "viewcount": 623,
@@ -57,7 +57,7 @@
     {
       "name": "Clothing App-design",
       "authorname": "George Clooney",
-      "imagelink": "https://img.freepik.com/free-vector/fashion-shopping-app-interface_23-2148653665.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1717804800&semt=ais_user",
+      "imagelink" : "/images/shot/img6.avif", 
       "profilephotolink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-lkijlO0g1F6MHKlfo2erxZ-z8FSlzTHRA&s",
       "likecount": 271,
       "viewcount": 3083,
@@ -68,7 +68,7 @@
     {
       "name": "Dancing women",
       "authorname": "Hannah ",
-      "imagelink": "https://static.vecteezy.com/system/resources/previews/021/946/550/original/women-character-design-collection-modern-cartoon-flat-style-design-with-teenage-girls-in-different-clothes-poses-characters-illustration-for-social-media-background-poster-cover-vector.jpg",
+      "imagelink" : "/images/shot/img7.jpg", 
       "profilephotolink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Pujknyzh66sbdVk7ifS_ARxwZV6FqtMCSFH5Mkk_eZhkzNAhEJL72lIw-ImD-5VSWIk&usqp=CAU",
       "likecount": 873,
       "viewcount": 9807,
@@ -79,7 +79,7 @@
     {
       "name": "Bulding-branding",
       "authorname": "Isaac Newton",
-      "imagelink": "https://cdn.dribbble.com/userupload/6250118/file/original-fe6ea3f3d4a06a4ef8ef90a0992993d0.png?resize=400x300&vertical=center",
+      "imagelink" : "/images/shot/img8.png", 
       "profilephotolink": "https://static.vecteezy.com/system/resources/previews/015/566/992/original/building-logo-icon-design-free-vector.jpg",
       "likecount": 94,
       "viewcount": 691,
@@ -90,7 +90,7 @@
     {
       "name": "Photo-editor App",
       "authorname": "Jack Sparrow",
-      "imagelink": "https://images.ui8.net/uploads/preview-5_1687185474960.png",
+      "imagelink" : "/images/shot/img9.webp",
       "profilephotolink": "https://images.unsplash.com/photo-1554080353-a576cf803bda?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "likecount": 645,
       "viewcount": 8536,
@@ -101,7 +101,7 @@
     {
       "name": "Beauty-palour",
       "authorname": "Kevin Spacey",
-      "imagelink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ83B7aPqPcxr1EBBr7u1NYCSKilO02j8OF0w&s",
+      "imagelink" : "/images/shot/img10.jpeg",
       "profilephotolink": "https://www.siasstudio.com/en/wp-content/uploads/2020/03/Sias-Studio-Beauty-Saloon-Logo-design-Black-watermark.jpg",
       "likecount": 2609,
       "viewcount": 7043,
@@ -112,7 +112,7 @@
     {
       "name": "Fitness-App",
       "authorname": "Leonardo ",
-      "imagelink": "https://i.pinimg.com/736x/9e/c7/9c/9ec79cb33b34eec7ba84bdc740deede1.jpg",
+      "imagelink" : "/images/shot/img11.jpg",
       "profilephotolink": "https://w0.peakpx.com/wallpaper/459/1009/HD-wallpaper-indian-model-boy-cute-u-wall.jpg",
       "likecount": 1067,
       "viewcount": 4986,
@@ -123,7 +123,7 @@
   {
     "name": "Full Service Digital Agency",
     "authorname": "Vivid Motion",
-    "imagelink": "https://cdn.dribbble.com/userupload/14227669/file/still-bf044a7f3a12527541347758f1e1efff.png?resize=400x300&vertical=center",
+    "imagelink" : "/images/shot/img12.png",
     "profilephotolink": "https://cdn.dribbble.com/users/3946401/avatars/normal/c6fd9a79740736d312410e73248945c1.png?1688380823",
     "likecount": 200,
     "viewcount": 530,
@@ -134,7 +134,7 @@
 {
   "name": "Flower",
   "authorname": "Dima Moiseenko",
-  "imagelink": "https://cdn.dribbble.com/userupload/14011987/file/original-6ca08a8eaaf5c2b570eda00221cec248.jpg?crop=0x351-3000x2601&resize=400x300&vertical=center",
+  "imagelink" : "/images/shot/img13.jpg",
   "profilephotolink": "https://cdn.dribbble.com/users/1068771/avatars/small/73f10aeecee8da86c40bd3cac892dc62.jpg?1708454054",
   "likecount": 34,
   "viewcount": 92,
@@ -145,7 +145,7 @@
 {
   "name": "Delta Ducks 05",
   "authorname": "atomicvibe lab",
-  "imagelink": "https://cdn.dribbble.com/userupload/13787503/file/original-cfd45ef6f5dbf28008805ccb86bb7de9.png?resize=400x300&vertical=center",
+  "imagelink" : "/images/shot/img14.png",
   "profilephotolink": "https://cdn.dribbble.com/users/77680/avatars/small/601b4c2fefc94b0605241ec40e8c2efc.png?1686398237",
   "likecount": 230,
   "viewcount": 680,
@@ -156,7 +156,7 @@
 {
   "name": "Quasar-3D design",
   "authorname": "Vivid Motion®",
-  "imagelink": "https://cdn.dribbble.com/userupload/14808535/file/still-36e86abf3a9eda6ed9753245e327cde1.png?resize=400x300&vertical=center",
+  "imagelink" : "/images/shot/img15.png",
   "profilephotolink": "https://cdn.dribbble.com/users/3946401/avatars/normal/c6fd9a79740736d312410e73248945c1.png?1688380823",
   "likecount": 310,
   "viewcount": 8800,
